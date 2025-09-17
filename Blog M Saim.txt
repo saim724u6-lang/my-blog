@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muhammad Saim — Email Marketing Specialist</title>
+  <meta name="description" content="Muhammad Saim — Email Marketing Specialist. Tips, case studies and tutorials on email marketing, deliverability, automation and copywriting.">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#06b6d4;--accent-2:#22c55e;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{
+      margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color:#e6eef8;
+      background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size:cover;
+      animation:fadeInBg 3s ease forwards;
+      -webkit-font-smoothing:antialiased;
+      overflow-x:hidden
+    }
+    @keyframes fadeInBg{from{opacity:0}to{opacity:1}}
+
+    .container{max-width:1000px;margin:36px auto;padding:0 20px;animation:fadeIn 1.5s ease forwards;opacity:0}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;animation:slideDown 1s ease forwards;opacity:0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:700;color:#042027}
+    h1{font-size:20px;margin:0}
+    .title{font-size:13px;color:var(--muted);margin-top:4px}
+
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:15px;transition:color .3s}
+    nav a:hover{color:var(--accent)}
+
+    .hero{margin-top:28px;padding:28px;border-radius:12px;background:rgba(15,23,36,0.7);backdrop-filter: blur(6px);display:grid;grid-template-columns:1fr 320px;gap:20px;animation:fadeUp 1.5s ease forwards;opacity:0}
+    .hero-left h2{margin:0;font-size:28px}
+    .hero-left p{color:var(--muted);line-height:1.5}
+    .cta{margin-top:18px;display:flex;gap:12px}
+    .btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:600;transition:transform .3s, box-shadow .3s}
+    .btn:hover{transform:scale(1.05);box-shadow:0 4px 15px rgba(0,0,0,0.3)}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#042027}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    .subscribe{background:rgba(11,18,32,0.85);padding:18px;border-radius:10px;animation:fadeIn 2s ease forwards;opacity:0}
+    .subscribe small{color:var(--muted)}
+    .subscribe form{display:flex;gap:8px;margin-top:12px}
+    .subscribe input{flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    .subscribe .submit{padding:10px 12px;border-radius:8px;border:0;background:var(--accent);color:#042027;font-weight:700;transition:transform .3s}
+    .subscribe .submit:hover{transform:scale(1.05)}
+
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:22px}
+    .card{background:rgba(11,18,32,0.85);padding:18px;border-radius:10px;opacity:0;animation:fadeUp 1.5s ease forwards}
+    .card:nth-child(1){animation-delay:0.3s}
+    .card:nth-child(2){animation-delay:0.6s}
+    .card:nth-child(3){animation-delay:0.9s}
+    .card:nth-child(4){animation-delay:1.2s}
+    .card h3{margin:0 0 8px 0}
+    .card p{color:var(--muted);margin:0 0 12px 0}
+    .meta{font-size:13px;color:var(--muted)}
+
+    .about{margin-top:26px;padding:18px;border-radius:10px;background:rgba(15,23,36,0.75);animation:fadeIn 2.5s ease forwards;opacity:0}
+    .footer{margin-top:28px;color:var(--muted);font-size:14px;padding:20px;text-align:center;animation:fadeIn 3s ease forwards;opacity:0}
+
+    @keyframes fadeIn{to{opacity:1}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes slideDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+
+    @media (max-width:860px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .hero-left h2{font-size:22px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">MS</div>
+        <div>
+          <h1>Muhammad Saim</h1>
+          <div class="title">Email Marketing Specialist</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#posts">Blog</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" role="region" aria-label="Intro">
+      <div class="hero-left">
+        <h2>Practical email marketing: strategy, copy & growth</h2>
+        <p>I'm Muhammad Saim — I help SaaS and ecommerce teams increase revenue with higher-converting email sequences, better segmentation, and reliable deliverability. I publish step-by-step guides, case studies, and real templates you can reuse.</p>
+        <div class="cta">
+          <button class="btn btn-primary" onclick="document.getElementById('subscribe-email').scrollIntoView({behavior:'smooth'})">Subscribe</button>
+          <a href="#contact" class="btn btn-ghost">Work with me</a>
+        </div>
+      </div>
+
+      <aside class="subscribe" id="subscribe-email" aria-label="Subscribe">
+        <small>Get weekly tips, templates and case studies — straight to your inbox.</small>
+        <form onsubmit="event.preventDefault();subscribe()">
+          <input type="email" id="email" placeholder="your@email.com" required>
+          <button class="submit">Subscribe</button>
+        </form>
+        <div id="submsg" style="margin-top:8px;color:var(--muted);font-size:13px"></div>
+      </aside>
+    </section>
+
+    <section id="posts">
+      <h2 style="margin-top:22px">Latest posts</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="meta">Template • 3 min read</div>
+          <h3>Welcome sequence that converts (email templates)</h3>
+          <p>Use this 5-email welcome flow to onboard new users and convert trialers into paying customers.</p>
+        </article>
+
+        <article class="card">
+          <div class="meta">Case study • 6 min read</div>
+          <h3>How we raised open rates by 18% for an ecommerce brand</h3>
+          <p>Segmented subject lines + send-time optimization resulted in measurable lift. Here's the step-by-step.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Muhammad</h2>
+      <p>I'm an Email Marketing Specialist with experience across SaaS and ecommerce. I focus on measurable growth: increasing revenue per recipient, reducing unsubscribe rates, and improving campaign ROI. I share practical tactics and downloadable templates on this blog.</p>
+    </section>
+
+   <section id="contact" style="margin-top:40px;">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
+    
+    <!-- Contact Info Card -->
+    <div class="card" style="text-align:left;display:flex;flex-direction:column;gap:14px;">
+      <h2 style="margin-bottom:6px;">📬 Get in Touch</h2>
+      <p style="color:var(--muted);margin:0 0 10px;">I'd love to hear from you. Whether it's a project inquiry or just a quick question, feel free to reach out.</p>
+      
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div>
+          <strong>📧 Email:</strong> <br>
+          <a href="mailto:saim724u6@gmail.com" style="color:var(--accent);text-decoration:none;">saim724u6@gmail.com</a>
+        </div>
+        <div>
+          <strong>📞 Phone:</strong> <br>
+          <a href="tel:+923281917551" style="color:var(--accent);text-decoration:none;">0328 1917551</a>
+        </div>
+        <div>
+          <strong>💬 WhatsApp:</strong> <br>
+          <a href="https://wa.me/923281917551" target="_blank" style="color:var(--accent-2);text-decoration:none;">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form Card -->
+    <div class="card">
+      <h3 style="margin-bottom:12px;">Send a Message</h3>
+      <form onsubmit="event.preventDefault();contact()">
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <input id="cname" placeholder="Your name" required style="padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.15);background:transparent;color:inherit">
+          <input id="cemail" type="email" placeholder="Your email" required style="padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.15);background:transparent;color:inherit">
+          <textarea id="cmsg" rows="4" placeholder="Message" style="padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.15);background:transparent;color:inherit"></textarea>
+          <button class="submit" style="padding:12px;font-weight:600;border-radius:8px;">Send message</button>
+          <div id="cresp" style="color:var(--muted);font-size:13px;margin-top:6px"></div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+    <footer class="footer">
+      © <span id="year"></span> Muhammad Saim — Email Marketing Specialist • Built with care
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function subscribe(){
+      var email = document.getElementById('email').value;
+      if(!email){
+        document.getElementById('submsg').textContent='Please enter a valid email.';
+        return
+      }
+      document.getElementById('submsg').textContent='Thanks — check your inbox for a welcome email.';
+    }
+
+    function contact(){
+      var name=document.getElementById('cname').value;
+      var email=document.getElementById('cemail').value;
+      var msg=document.getElementById('cmsg').value;
+      if(!name||!email||!msg){
+        document.getElementById('cresp').textContent='Please fill all fields.';
+        return
+      }
+      document.getElementById('cresp').textContent='Message sent — I will reply within 48 hours.';
+    }
+  </script>
+</body>
+</html>
